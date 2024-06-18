@@ -68,7 +68,9 @@ The Market Forecast Pro App is a Streamlit-based web application that provides u
   ## Author
 
 <div id="header" align="center">
+  <a href="https://www.linkedin.com/in/bibshukla">
   <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
+  </a>
 </div>
 
 <h3 align="center">Hi there 👋, I'm Bib</h3>
@@ -80,7 +82,7 @@ The Market Forecast Pro App is a Streamlit-based web application that provides u
   </a>
 </div>
 
-You can find more about me and my projects on my [GitHub profile](https://github.com/bibshukl).
+You can find more about me and my projects on my [GitHub profile](https://github.com/bibshukla).
 
 ## License
 
