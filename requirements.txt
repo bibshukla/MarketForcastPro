@@ -6,3 +6,4 @@ ta
 xgboost
 torch
 autogluon
+chronos
