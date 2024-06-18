@@ -3,6 +3,7 @@
 Welcome to the Market Forecast Pro App! This app allows you to visualize stock price data, explore technical indicators, and make short-term price predictions using traditional machine learning models and language models.
 
 Created and designed by [Bib Shukla](https://www.linkedin.com/in/bibshukla/).
+![image](https://github.com/bibshukla/MarketForcastPro/assets/56233366/0ba16d2e-7ff4-4615-afcc-e1f66773fbca)
 
 ## Table of Contents
 
