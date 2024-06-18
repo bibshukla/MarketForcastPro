@@ -2,7 +2,7 @@
 
 Welcome to the Market Forecast Pro App! This app allows you to visualize stock price data, explore technical indicators, and make short-term price predictions using traditional machine learning models and language models.
 
-Created and designed by [Vikas Sharma](https://www.linkedin.com/in/vikas-sharma005/).
+Created and designed by [Bib Shukla](https://www.linkedin.com/in/bibshukla/).
 
 ## Table of Contents
 
@@ -61,6 +61,9 @@ The Market Forecast Pro App is a Streamlit-based web application that provides u
 - scikit-learn
 - XGBoost
 - Chronos
+    Chronos - https://github.com/amazon-science/chronos-forecasting
+    Chronos is a family of pretrained time series forecasting models based on language model architectures. A time series is transformed into a sequence of tokens via scaling and quantization, and a language model is trained on these tokens using the cross-entropy loss. Once trained, probabilistic forecasts are obtained by sampling multiple future trajectories given the historical context.
+- This code is an enhancement of code originally published - https://github.com/vikasharma005/Stock-Price-Prediction
 
   ## Author
 
@@ -86,5 +89,4 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 
-Chronos - https://github.com/amazon-science/chronos-forecasting
-Chronos is a family of pretrained time series forecasting models based on language model architectures. A time series is transformed into a sequence of tokens via scaling and quantization, and a language model is trained on these tokens using the cross-entropy loss. Once trained, probabilistic forecasts are obtained by sampling multiple future trajectories given the historical context.
+
