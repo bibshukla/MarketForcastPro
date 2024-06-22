@@ -205,6 +205,9 @@ def compare():
     num1 = num
     num2 = num
 
+    # Create columns for side-by-side display
+    col1, col2 = st.columns(2)
+
     if option1 == option2:
         st.write("Both selections are the same.")
     else:
@@ -212,8 +215,12 @@ def compare():
     if st.button('Compare'):
         if option1 == 'LinearRegression':
             engine = LinearRegression()
-            model_engine(engine, num1)
-            model_engine_FM(num2)
+            with col1:
+                result1 = model_engine(engine, num1)
+                st.write(result1)
+            with col2:
+                result2 = model_engine_FM(num2)
+                st.write(result2)
         elif option1 == 'RandomForestRegressor':
             engine = RandomForestRegressor()
             model_engine(engine, num1)
@@ -228,7 +235,7 @@ def compare():
             model_engine_FM(num2)
         else:
             engine = XGBRegressor()
-            model_engine(engine, num)
+            model_engine(engine, num1)
             model_engine_FM(num2)
 
 if __name__ == '__main__':
