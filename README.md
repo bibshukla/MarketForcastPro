@@ -24,6 +24,8 @@ The Market Forecast Pro App is a Streamlit-based web application that provides u
 
 - **Forecast**: Predict future stock prices using machine learning models including Linear Regression, Random Forest Regressor, Extra Trees Regressor, KNeighbors Regressor, XGBoost Regressor & Chronos language model.
 
+- **Compre Forecast**: Compare future stock prices prediction between traditional learning models and Foundation model.
+
 ## Setup
 
 1. Clone the repository:
