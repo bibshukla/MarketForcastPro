@@ -25,9 +25,11 @@ st.sidebar.info('Welcome to the Market Forecast Pro App using traditional ML mod
 st.sidebar.info("Created and designed by [Bib Shukla](https://www.linkedin.com/in/bibshukla/)")
 
 def main():
-    option = st.sidebar.selectbox('Make a choice', ['Forecast','Visualize'])
+    option = st.sidebar.selectbox('Make a choice', ['Forecast','Visualize','Compare Forecast'])
     if option == 'Visualize':
         tech_indicators()
+    elif option == 'Compare Forecast':
+        compare()
     else:
         predict()
 
@@ -189,6 +191,45 @@ def model_engine_FM(num):
         st.text(f'Day {day}: {i}')
         day += 1
 
+# Function to compare the selections
+def compare():
+    # Title of the app
+    st.title("Compare Selections")
+
+    # Dropdown select boxes
+    option1 = st.selectbox("Select Option 1", ["LinearRegression", "RandomForestRegressor", "ExtraTreesRegressor", "KNeighborsRegressor", "XGBoostRegressor"])
+    option2 = st.selectbox("Select Option 2", ["ChronosPretrainedLanguageModel"])
+
+    num = st.number_input('How many days forecast?', value=5)
+
+    num1 = num
+    num2 = num
+
+    if option1 == option2:
+        st.write("Both selections are the same.")
+    else:
+        st.write(f"Selection 1: {option1}, Selection 2: {option2}")
+    if st.button('Compare'):
+        if option1 == 'LinearRegression':
+            engine = LinearRegression()
+            model_engine(engine, num1)
+            model_engine_FM(num2)
+        elif option1 == 'RandomForestRegressor':
+            engine = RandomForestRegressor()
+            model_engine(engine, num1)
+            model_engine_FM(num2)
+        elif option1 == 'ExtraTreesRegressor':
+            engine = ExtraTreesRegressor()
+            model_engine(engine, num1)
+            model_engine_FM(num2)
+        elif option1 == 'KNeighborsRegressor':
+            engine = KNeighborsRegressor()
+            model_engine(engine, num1)
+            model_engine_FM(num2)
+        else:
+            engine = XGBRegressor()
+            model_engine(engine, num)
+            model_engine_FM(num2)
 
 if __name__ == '__main__':
     main()
